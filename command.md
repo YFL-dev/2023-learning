@@ -31,7 +31,7 @@
 
 ### 8. rm
 `rm` remove files
-`rm -r` recursive remove files
+`rm -rf` recursive remove files
 
 ### 9. sudo su -
 `sudo su -` swihch to root user
@@ -43,3 +43,7 @@
 
 ### 11. clear
 `clear` clear screen
+
+### 12. apt
+`apt update` update apt to the least version, may need sudo access.
+`apt install` + [package name], may need sudo access.
