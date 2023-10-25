@@ -31,7 +31,8 @@
 
 ### 8. rm
 `rm` remove files
-`rm -rf` recursive remove files
+`rm- -r` recursive removal
+`rm -rf` delete a directory and its contents recursively, without prompting for confirmation
 
 ### 9. sudo su -
 `sudo su -` swihch to root user
@@ -45,5 +46,5 @@
 `clear` clear screen
 
 ### 12. apt
-`apt update` update apt to the least version, may need sudo access.
-`apt install` + [package name], may need sudo access.
+`sudo apt update` update apt to the least version, may need sudo access.
+`sudo apt install` + [package name], may need sudo access.
