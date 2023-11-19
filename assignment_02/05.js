@@ -11,3 +11,18 @@
  * Output: "doG gniD"
  *
  */
+
+function reverseWords(s) {
+  const words = s.split(" ");
+
+  const reverseWords = words.map(word => word.split("").reverse().join(""));
+
+  const reverseString = reverseWords.join(" ");
+
+  return reverseString;
+
+}
+
+const s = "Bi train Zhu";
+
+console.log(reverseWords(s));

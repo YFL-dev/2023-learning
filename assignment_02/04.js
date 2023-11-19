@@ -13,3 +13,23 @@
  * arr = [1, 2]
  * expected output: false
  */
+
+function isOccurrencesUnique(numbers) {
+  const occurrences = {};
+
+  for (const number of numbers) {
+    occurrences[number] = (occurrences[number] || 0) + 1;
+  }
+
+  const occurrencesValue = Object.values(occurrences);
+  const uniqueOccurrences = new Set(occurrencesValue);
+
+  return occurrencesValue.length == uniqueOccurrences.size;
+}
+
+// const numbers = [1, 2, 2, 1, 1, 3];
+const numbers = [1, 2];
+
+
+console.log(isOccurrencesUnique(numbers))
+
