@@ -1,5 +1,3 @@
-const { describe, test, expect } = require('jest');
-
 const { add, divide } = require('../src/calculation');
 
 describe('Calculation - add', () => {
