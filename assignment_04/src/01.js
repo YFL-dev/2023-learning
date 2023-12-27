@@ -24,10 +24,6 @@ const sum = (num) => {
   return total;
 };
 
-/**
- * Write a function to sum 1 to n,
- * return the result.
- */
 
 const sum1 = (num) => {
   const parsedNum = parseInt(num, 10);
