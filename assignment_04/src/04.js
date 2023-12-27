@@ -15,32 +15,31 @@
  */
 
 const calculateOccurrence = (arr) => {
-	// test if the parameter is an object
-	if (typeof arr !== 'object') {
-		throw new Error('Invalid input: the argument must be an array.')
-	}
+  // test if the parameter is an object
+  if (typeof arr !== 'object') {
+    throw new Error('Invalid input: the argument must be an array.');
+  }
 
-	// test if all elements in the array are integers
-	if (!arr.every(Number.isInteger)) {
-		throw new Error('Invalid input: the elements array must be integers.')
-	}
-	const counter = {};
+  // test if all elements in the array are integers
+  if (!arr.every(Number.isInteger)) {
+    throw new Error('Invalid input: the elements array must be integers.');
+  }
+  const counter = {};
 
-	arr.forEach(ele => {
-		if (counter[ele]) {
-			counter[ele] += 1;
-		} else {
-			counter[ele] = 1;
-		}
-	})
-	// check if all values are unique
-	const values = Object.values(counter);
-	const uniqueValues = new Set(values);
+  arr.forEach((ele) => {
+    if (counter[ele]) {
+      counter[ele] += 1;
+    } else {
+      counter[ele] = 1;
+    }
+  });
+  // check if all values are unique
+  const values = Object.values(counter);
+  const uniqueValues = new Set(values);
 
-	return values.length === uniqueValues.size;
-
-}
+  return values.length === uniqueValues.size;
+};
 
 module.exports = {
-	calculateOccurrence
-}
+  calculateOccurrence,
+};

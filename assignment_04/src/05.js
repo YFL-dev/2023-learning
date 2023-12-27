@@ -13,14 +13,15 @@
  */
 
 const reverseWords = (s) => {
-	const wordsArray = s.split(' ');
+  const wordsArray = s.split(' ');
 
-	const reversedArray = wordsArray.map(word => word.split('').reverse().join(''));
+  const reversedArray = wordsArray.map((word) =>
+    word.split('').reverse().join('')
+  );
 
-	return reversedArray.join(' ');
-
-}
+  return reversedArray.join(' ');
+};
 
 module.exports = {
-	reverseWords
-}
+  reverseWords,
+};

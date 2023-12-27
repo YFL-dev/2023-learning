@@ -24,7 +24,6 @@ const sum = (num) => {
   return total;
 };
 
-
 const sum1 = (num) => {
   const parsedNum = parseInt(num, 10);
 

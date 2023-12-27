@@ -4,26 +4,26 @@
  */
 
 const calculateArea = (radius) => {
-	if (typeof radius !== 'number' || radius < 0) {
-		throw new Error('Invalid input: the argument must be an positive number.');
-	};
+  if (typeof radius !== 'number' || radius < 0) {
+    throw new Error('Invalid input: the argument must be an positive number.');
+  }
 
-	let area = Math.PI * radius * radius;
+  let area = Math.PI * radius * radius;
 
-	return parseFloat(area.toFixed(2))
-}
+  return parseFloat(area.toFixed(2));
+};
 
 const calculatePerimeter = (radius) => {
-	if (typeof radius !== 'number' || radius < 0) {
-		throw new Error('Invalid input: the argument must be an positive number.');
-	};
+  if (typeof radius !== 'number' || radius < 0) {
+    throw new Error('Invalid input: the argument must be an positive number.');
+  }
 
-	let perimeter = 2 * Math.PI * radius;
+  let perimeter = 2 * Math.PI * radius;
 
-	return parseFloat(perimeter.toFixed(2))
-}
+  return parseFloat(perimeter.toFixed(2));
+};
 
 module.exports = {
-	calculateArea,
-	calculatePerimeter
-}
+  calculateArea,
+  calculatePerimeter,
+};

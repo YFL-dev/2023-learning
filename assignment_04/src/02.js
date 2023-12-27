@@ -9,28 +9,24 @@
  */
 
 const reverse = (num) => {
+  // Check if the argument is an integer
+  if (num < 0 || !Number.isInteger(num)) {
+    throw new Error('Invalid input: the argument must be an positive integer.');
+  }
 
-	// Check if the argument is an integer
-	if (num < 0 || !Number.isInteger(num)) {
-		throw new Error('Invalid input: the argument must be an positive integer.');
-	};
+  // Convert integer to array
+  const arr = Array.from(String(num), Number);
 
-	// Convert integer to array
-	const arr = Array.from(String(num), Number);
+  // Reverse the array
+  arr.reverse();
 
-	// Reverse the array
-	arr.reverse();
+  // Convert array to integer
+  const str = arr.join('');
+  const reversedNum = parseInt(str);
 
-	// Convert array to integer
-	const str = arr.join('');
-	const reversedNum = parseInt(str);
-
-	return (reversedNum);
-
+  return reversedNum;
 };
 
 module.exports = {
-	reverse
+  reverse,
 };
-
-
