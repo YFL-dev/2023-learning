@@ -8,7 +8,6 @@
  * Edge case: what if there is an zero
  */
 
-
 function reverseNumber(number) {
   let numberString = number.toString();
   let reverseNumberString = numberString.split("").reverse().join("");
@@ -18,4 +17,4 @@ function reverseNumber(number) {
 
 let number = 123;
 
-console.log(reverseNumber(number))
+console.log(reverseNumber(number));

@@ -30,6 +30,4 @@ function isOccurrencesUnique(numbers) {
 // const numbers = [1, 2, 2, 1, 1, 3];
 const numbers = [1, 2];
 
-
-console.log(isOccurrencesUnique(numbers))
-
+console.log(isOccurrencesUnique(numbers));
